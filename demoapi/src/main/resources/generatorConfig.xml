@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:oracle:thin:@localhost:1521/xe" driverClass="oracle.jdbc.driver.OracleDriver" password="password" userId="miaww" />
+    <javaModelGenerator targetPackage="com.miaww.demoapi.model" targetProject="demoapi\src\main\java" />
+    <sqlMapGenerator targetPackage="mapper.demo" targetProject="demoapi\src\main\resources" />
+    <javaClientGenerator targetPackage="com.miaww.demoapi.mapper" targetProject="demoapi\src\main\java" type="XMLMAPPER" />
+    <table schema="miaww" tableName="USER_INFO"></table>
+    <table schema="miaww" tableName="ROLE_INFO"></table>
+    <table schema="miaww" tableName="MENU_INFO"></table>
+    <table schema="miaww" tableName="ROLE_MENU_MAP">
+      <!-- <columnOverride column="???" property="???" /> -->
+    </table>
+  </context>
+</generatorConfiguration>
